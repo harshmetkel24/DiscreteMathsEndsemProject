@@ -1,0 +1,85 @@
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <title>Demostation</title>
+        <link rel='stylesheet' href='../../css/demonstrate.css' />
+    </head>
+    <body>
+        <h1 class='heading1'>Problem Statement:</h1>
+        <p class='para1'>As we all know that each living being on this planet is
+            in some way dependent on any other animal or plant. But how this
+            balance of dependency is balanced? And how can one perform
+            systematic analysis of this dependecies? How do someone can predict
+            if some of important animals are getting endangered just because
+            some later animals on which former one is dependent?
+        </p>
+        <h1 class='heading2'>Solution/Approach:</h1>
+        <p class='para2'><span class='spe'>See here's the way...</span>Our
+            Project will take you through the journey, and with some
+            mathematical interactions we will explain you these concepts by
+            taking simple examples.
+            <spen class='spe'>So waiting for what?</spen>
+            Let's jump into it, by clicking on
+            <span class='spe'>start</span><button
+                id='start-button'
+            >Start</button></p>
+        <p class='para3' id='para3' style='visibility: hidden;'>If we see
+            <span class='spe'>Food-Web</span>. Which is definded as
+            <span class='spe'>A diagram for an ecosystem that shows the
+                relationships between different organisms by graphically
+                displaying what eats what.</span>
+            <br />
+            Below is an image of one such small
+            birds/insects/plants/small-animals ecosystem.
+            <br />
+            <img
+                src='../../images/graph.jpg'
+                class='img-graph'
+                alt='Sorry, graph not found :('
+            />
+            <br />
+            Here one can see each creature has been given a certaing number.
+            <span class='spe'>This numbers will represent that animal in our
+                analysis</span>. Now see below a Sqaure matrix, which consists
+            of only
+            <span class='math'>zeros</span>
+            and
+            <span class='math'>ones</span>. This matrix is known as Adjency
+            matrix. To construct such Adjency matrix, one first needs to know
+            number of Creatures in any ecosystem which will represents the
+            dimensions of Adjency matrix. Then on looking on Food-Web graph one
+            can easily identify, that which creature survives on which another
+            creature. And looing on that one can assigns
+            <span class='math'>ones</span>
+            to the Adjency matrix. If we consider rows of an Adjency matrix as i
+            and columns as j. Then by following a rule
+            <span class='spe'>i eats j implies
+                <span class='math'>one</span></span>.
+            <br />
+            So if in any cell there is one, this means that animal representing
+            that row i, will eat animal representing columns j. And so based on
+            this same principle we can construct a matrix as shown below, for
+            the Food-Web like shown above.
+        </p>
+        <table id='table' style='visibility: hidden;'>
+            <th>
+                <tr class='thead'></tr>
+            </th>
+            <tbody id='body'></tbody>
+        </table>
+
+        <table id='table2' style='visibility: hidden;'>
+            <th>
+                <tr class='thead2'></tr>
+            </th>
+            <tbody id='body2'></tbody>
+        </table>
+        <marquee behavior='sliding' direction='left' scrollamount='10'><strong
+            >Created by Isha Shah (202001163), Krunal Chhagani (202001158) and
+                Harshkumar Metkel (202001154)
+            </strong></marquee>
+    </body>
+    <script src='../../script/demonstrate.js'></script>
+</html>
