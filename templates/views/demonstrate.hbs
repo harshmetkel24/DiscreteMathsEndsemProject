@@ -35,10 +35,11 @@
             birds/insects/plants/small-animals ecosystem.
             <br />
             <img
-                src='../../images/graph.jpg'
+                src='../../images/GRaph.png'
                 class='img-graph'
                 alt='Sorry, graph not found :('
             />
+            <br />
             <br />
             Here one can see each creature has been given a certaing number.
             <span class='spe'>This numbers will represent that animal in our
@@ -58,24 +59,78 @@
             <span class='spe'>i eats j implies
                 <span class='math'>one</span></span>.
             <br />
+            <br />
             So if in any cell there is one, this means that animal representing
             that row i, will eat animal representing columns j. And so based on
             this same principle we can construct a matrix as shown below, for
             the Food-Web like shown above.
+            <button class='btn2' id='btn2'>Get the Adjency-matrix</button>
         </p>
+        <h3
+            class='heading3'
+            id='heading3'
+            style='visibility: hidden;'
+        >Adjency-Matrix for the above Food-Web</h3>
         <table id='table' style='visibility: hidden;'>
             <th>
-                <tr class='thead'></tr>
+                <tr class='thead' id='thead'></tr>
             </th>
             <tbody id='body'></tbody>
         </table>
 
+        <p class='para4' id='para4' style='visibility: hidden;'>After looking at
+            whatever we seen, one can say that
+            <span class='spe'>Adjency matrix gives the information about the
+                direct sources of food. Like which creature is directly
+                dependent on which other creature for food.</span><button
+                class='btn3'
+                id='btn3'
+            >Get the Sqaure Adjency-matrix
+            </button>
+            <br />
+            <br />
+            Now on carefully observing this matrix one can say that
+            <span class='spe'>Creatures belonging to indexes 1 to 4 these does
+                not depend on any other creatures.</span>
+            This are some king of plants and creates their own food through
+            photosynthesis. But as we go down no of one's in row increases.
+            Which shows food dependencies. For example if see
+            <span class='spe'>tow 10 (Frog) depends on cloumns 5 (Fruit-Fly), 6
+                (Butter-Fly), 7 (Grass-Hopper) and 8 (Dragon-Fly).</span>
+            This way this kind of Adjecny matrices become very helpful in
+            understanding the Food-Web inter species dependecies on Food. Also
+            this method can be scaled to any size of Food-Web just the
+            dimensions of matrix will increase the complexity won't increase to
+            much extent because the basic principle remains the same.
+        </p>
+        <h3 class='heading4' id='heading4' style='visibility: hidden;'>Sqaure of
+            Adjency-Matrix</h3>
+
         <table id='table2' style='visibility: hidden;'>
             <th>
-                <tr class='thead2'></tr>
+                <tr class='thead2' id='thead2'></tr>
             </th>
             <tbody id='body2'></tbody>
         </table>
+        <p class='para5' id='para5' style='visibility: hidden;'>
+            Here we have Square of Adjency matrix. This tells us
+            <span class='spe'>about the indirect sources (means those sources of
+                food, which the creature does not directly consumes, but its
+                direct resource depends on that creature) of Food for any
+                particular creature.</span>
+            Like if we take example of
+            <span class='spe'>row 10 (Frog) it has ones in cloumns 1 (Corn) , 2
+                (Flowered Plants) , 3 (Lavenders), 5 (Fruit-Fly) and 6
+                (Butter-Fly). This are all the creature/plnats which are not
+                directly consumed by the Frog but its direct sources are
+                dependent on this things so even it matters for Frog that this
+                resources sustain.</span>
+            Also observe that column 4 (Mangoes) is numbered two. Which means
+            that Frog has some source that is directly dependent on Mangoes. On
+            looking at the Graph, we found that creature is Fruit-Fly. So this
+            we one can do a detailed analysis on indirect food resources of any
+            creature by looking at its Square of Adjency matrix.
+        </p>
         <marquee behavior='sliding' direction='left' scrollamount='10'><strong
             >Created by Isha Shah (202001163), Krunal Chhagani (202001158) and
                 Harshkumar Metkel (202001154)

@@ -5,7 +5,10 @@ for (let i = 0; i < 14; i++) {
     headrow += `<td>${i + 1}</td>`;
 }
 
-document.getElementsByClassName('thead').innerHTML = headrow;
+console.log(headrow);
+
+document.getElementById('thead').innerHTML = headrow;
+document.getElementById('thead2').innerHTML = headrow;
 
 let A = new Array(14);
 for (let i = 0; i < A.length; i++) {
@@ -61,9 +64,19 @@ for (let i = 0; i < 14; i++) {
 
 // Displaying content on click of start
 document.getElementById('start-button').addEventListener('click', () => {
-    document.getElementById('table').style.visibility = 'visible';
     document.getElementById('para3').style.visibility = 'visible';
+});
+
+document.getElementById('btn2').addEventListener('click', () => {
+    document.getElementById('table').style.visibility = 'visible';
+    document.getElementById('heading3').style.visibility = 'visible';
+    document.getElementById('para4').style.visibility = 'visible';
+});
+
+document.getElementById('btn3').addEventListener('click', () => {
     document.getElementById('table2').style.visibility = 'visible';
+    document.getElementById('heading4').style.visibility = 'visible';
+    document.getElementById('para5').style.visibility = 'visible';
 });
 
 let row = '';

@@ -12,7 +12,14 @@
 body {
     margin: 0%;
     box-sizing: border-box;
-    background-image: var(--light-4);
+    background-image: linear-gradient(
+        to bottom,
+        white,
+        lightpink,
+        pink,
+        lightpink,
+        whitesmoke
+    );
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -25,6 +32,7 @@ table tr td {
     border: var(--dark-1) solid 2px;
     padding: 4px 8px;
     text-align: center;
+    font-weight: 800;
 }
 table {
     border: var(--dark-1) solid 4px;
@@ -36,20 +44,29 @@ table {
 /* headings */
 .heading1,
 .heading2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-        'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     margin: 2%;
+    text-decoration: underline;
+}
+
+.heading3,
+.heading4 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 
 /* Paragraphs */
 
 .para1,
 .para2,
-.para3 {
+.para3,
+.para4,
+.para5 {
     font-weight: 600;
     margin: 1% 2%;
+    text-justify: inter-cluster;
 }
 .img-graph {
     width: 60vw;
@@ -63,7 +80,9 @@ table {
     font-style: oblique;
 }
 
-#start-button {
+#start-button,
+.btn2,
+.btn3 {
     text-transform: uppercase;
     border-radius: 2rem;
     border: var(--dark-1) solid 3px;
@@ -76,7 +95,7 @@ marquee {
     color: rgb(5, 6, 8);
     font: caption;
     background-color: var(--light-2);
-    position: sticky;
+    position: fixed;
     bottom: 0%;
     margin: auto;
     padding: 0.2rem;
