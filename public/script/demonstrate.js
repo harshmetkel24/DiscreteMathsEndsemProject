@@ -5,8 +5,6 @@ for (let i = 0; i < 14; i++) {
     headrow += `<td>${i + 1}</td>`;
 }
 
-console.log(headrow);
-
 document.getElementById('thead').innerHTML = headrow;
 document.getElementById('thead2').innerHTML = headrow;
 
@@ -62,7 +60,18 @@ for (let i = 0; i < 14; i++) {
     }
 }
 
-// Displaying content on click of start
+// performing matrix addition
+let Asum = new Array(14);
+for (let i = 0; i < A.length; i++) {
+    Asum[i] = new Array(14);
+    for (let j = 0; j < 14; j++) {
+        Asum[i][j] = A[i][j] + Asq[i][j];
+    }
+}
+
+console.table(Asum);
+
+// Displaying content on click of buttons
 document.getElementById('start-button').addEventListener('click', () => {
     document.getElementById('para3').style.visibility = 'visible';
 });
@@ -77,6 +86,12 @@ document.getElementById('btn3').addEventListener('click', () => {
     document.getElementById('table2').style.visibility = 'visible';
     document.getElementById('heading4').style.visibility = 'visible';
     document.getElementById('para5').style.visibility = 'visible';
+});
+
+document.getElementById('btn4').addEventListener('click', () => {
+    document.getElementById('table3').style.visibility = 'visible';
+    document.getElementById('heading5').style.visibility = 'visible';
+    document.getElementById('para6').style.visibility = 'visible';
 });
 
 let row = '';
@@ -97,10 +112,23 @@ for (let i = 0; i < A.length; i++) {
     row2 += `<tr> <td>${i + 1}</td><td>${Asq[i][0]}</td> <td>${
         Asq[i][1]
     }</td> <td>${Asq[i][2]}</td> <td>${Asq[i][3]}</td> <td>${Asq[i][4]}</td>
-        <td>${A[i][5]}</td> <td>${Asq[i][6]}</td> <td>${Asq[i][7]}</td> <td>${
+        <td>${Asq[i][5]}</td> <td>${Asq[i][6]}</td> <td>${Asq[i][7]}</td> <td>${
         Asq[i][8]
     }</td> <td>${Asq[i][9]}</td> <td>${Asq[i][10]}</td> <td>${
         Asq[i][11]
     }</td> <td>${Asq[i][12]}</td> <td>${Asq[i][13]}</td> </tr>`;
     document.getElementById('body2').innerHTML = row2;
+}
+
+let row3 = '';
+for (let i = 0; i < A.length; i++) {
+    row3 += `<tr> <td>${i + 1}</td><td>${Asum[i][0]}</td> <td>${
+        Asum[i][1]
+    }</td> <td>${Asum[i][2]}</td> <td>${Asum[i][3]}</td> <td>${Asum[i][4]}</td>
+        <td>${A[i][5]}</td> <td>${Asum[i][6]}</td> <td>${Asum[i][7]}</td> <td>${
+        Asum[i][8]
+    }</td> <td>${Asq[i][9]}</td> <td>${Asq[i][10]}</td> <td>${
+        Asum[i][11]
+    }</td> <td>${Asum[i][12]}</td> <td>${Asq[i][13]}</td> </tr>`;
+    document.getElementById('body3').innerHTML = row3;
 }
