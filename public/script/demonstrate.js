@@ -132,3 +132,10 @@ for (let i = 0; i < A.length; i++) {
     }</td> <td>${Asum[i][12]}</td> <td>${Asq[i][13]}</td> </tr>`;
     document.getElementById('body3').innerHTML = row3;
 }
+
+// Theme handling
+document.getElementById('changeTheme').addEventListener('click', () => {
+    let body = document.body;
+    body.classList.toggle('darkmode');
+    console.log('hello');
+});

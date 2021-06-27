@@ -11,8 +11,11 @@ app.use(express.static(static_path));
 
 // views path in templates
 const views_path = path.join(__dirname, '../templates/views');
+const partials_path = path.join(__dirname, '../templates/partials');
 app.set('views', views_path);
 app.set('view engine', 'hbs');
+
+hbs.registerPartials(partials_path);
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -23,6 +26,10 @@ app.get('/', (req, res) => {
 
 app.get('/demonstrate', (req, res) => {
     res.render('demonstrate');
+});
+
+app.get('/commercialisation', (req, res) => {
+    res.render('commercialisation');
 });
 
 app.listen(port, () => {

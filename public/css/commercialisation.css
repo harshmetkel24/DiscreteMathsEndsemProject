@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    background-color: rgb(253, 193, 193);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+/* headings */
+.heading1 {
+    font-size: 3rem;
+    margin: 2%;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.heading3 {
+    font-size: 1.7rem;
+    margin: 2%;
+    text-decoration: underline;
+}
+.heading2,
+.heading4 {
+    font-size: 2rem;
+    margin: 2%;
+    text-decoration: underline;
+}
+
+.comm_icon {
+    width: 20vh;
+    margin-left: 2%;
+}
+
+/* Pragraphs */
+.para1,
+.para2,
+.para3,
+.para4,
+.para5 {
+    margin: 2% 4%;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.spe {
+    color: rgb(155, 20, 20);
+    font-weight: 700;
+    font-style: oblique;
+}
+
+ul {
+    margin: 2% 5%;
+    font-weight: 600;
+}
+
+/* Theme toggle */
+.changeTheme {
+    position: fixed;
+    top: 9%;
+    left: 85%;
+    border: 0.2rem solid black;
+    border-radius: 2rem;
+    box-shadow: black 2px 3px 4px 3px;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}

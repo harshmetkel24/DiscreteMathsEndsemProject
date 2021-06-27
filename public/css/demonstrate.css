@@ -4,7 +4,7 @@
     --dark-3: green;
     --dark-4: red;
     --light-1: white;
-    --light-2: pink;
+    --light-2: lightpink;
     --lignt-3: grey;
     --light-4: whitesmoke;
 }
@@ -12,14 +12,15 @@
 body {
     margin: 0%;
     box-sizing: border-box;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom,
         white,
         lightpink,
         pink,
         lightpink,
         white
-    );
+    ); */
+    background-color: var(--light-2);
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -92,17 +93,36 @@ table {
     text-transform: uppercase;
     border-radius: 2rem;
     border: var(--dark-1) solid 3px;
-    padding: 1px 3px;
+    padding: 1px 4px;
     margin-left: 10px;
     background-color: silver;
 }
 
-marquee {
-    color: rgb(5, 6, 8);
-    font: caption;
-    background-color: var(--light-2);
+/* Theme toggle */
+.changeTheme {
     position: fixed;
-    bottom: 0%;
-    margin: auto;
-    padding: 0.2rem;
+    top: 9%;
+    left: 85%;
+    border: 0.2rem solid black;
+    border-radius: 2rem;
+    box-shadow: black 2px 3px 4px 3px;
+}
+
+/* Dark-mode */
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.darkmode button,
+.darkmode #start-button,
+.darkmode .button {
+    color: white;
+    background-color: cornflowerblue;
+    font-weight: 700;
+}
+
+.darkmode table tr td {
+    border: 2px solid white;
 }
