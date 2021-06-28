@@ -12,25 +12,25 @@
 body {
     margin: 0%;
     box-sizing: border-box;
-    /* background-image: linear-gradient(
-        to bottom,
-        white,
-        lightpink,
-        pink,
-        lightpink,
-        white
-    ); */
+    background-image: url(../images/bg_img.jpg);
+    background-size: cover;
     background-color: var(--light-2);
-    background-size: contain;
     background-repeat: no-repeat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-        'Lucida Sans', Arial, sans-serif;
+    font-family: cursive;
+    letter-spacing: 0.09rem;
+}
+
+/* Containers */
+.container1 {
+    background-color: whitesmoke;
+    padding: 2% 1%;
+    margin: 4% 4%;
 }
 
 /* Table */
 table tr td {
     margin: 80px;
-    border: var(--dark-1) solid 2px;
+    border: var(--dark-4) solid 2px;
     padding: 4px 8px;
     text-align: center;
     font-weight: 800;
@@ -55,7 +55,7 @@ table {
 .heading4,
 .heading5 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-decoration: underline;
 }
 
@@ -71,19 +71,23 @@ table {
     margin: 1% 2%;
     text-justify: inter-cluster;
 }
-.para6 {
-    margin-bottom: 5%;
-}
+
 .img-graph {
-    width: 60vw;
-    height: 550px;
-    margin: 2% 19vw;
-    border: ridge 0.5rem var(--dark-2);
+    width: 50vw;
+    height: 50vw;
+    margin: 5% 19vw;
+    border: ridge 0.7rem var(--dark-2);
+    box-shadow: skyblue -5px 12px 14px 16px;
 }
 .spe {
     color: var(--dark-2);
     font-weight: 800;
     font-style: oblique;
+}
+
+.spe:hover {
+    color: var(--dark-4);
+    font-style: normal;
 }
 
 #start-button,
@@ -93,11 +97,23 @@ table {
     text-transform: uppercase;
     border-radius: 2rem;
     border: var(--dark-1) solid 3px;
-    padding: 1px 4px;
-    margin-left: 10px;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0.8rem 0.5rem;
     background-color: silver;
 }
 
+#start-button:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    padding: 0.25rem 0.45rem;
+    background-color: slateblue;
+    text-decoration: underline;
+}
 /* Theme toggle */
 .changeTheme {
     position: fixed;

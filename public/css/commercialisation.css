@@ -1,9 +1,27 @@
+:root {
+    --dark-1: black;
+    --dark-2: blue;
+    --dark-3: green;
+    --dark-4: red;
+    --light-1: white;
+    --light-2: lightpink;
+    --lignt-3: grey;
+    --light-4: whitesmoke;
+}
+
 body {
     box-sizing: border-box;
     margin: 0%;
-    background-color: rgb(253, 193, 193);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-        'Lucida Sans', Arial, sans-serif;
+    background-image: url(../images//bg_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+}
+
+/* Container */
+.container {
+    background-color: whitesmoke;
+    margin: 4% 4%;
 }
 
 /* headings */
@@ -26,8 +44,9 @@ body {
 }
 
 .comm_icon {
-    width: 20vh;
-    margin-left: 2%;
+    margin-top: 1%;
+    width: 30vh;
+    margin-left: 1%;
 }
 
 /* Pragraphs */
@@ -36,15 +55,20 @@ body {
 .para3,
 .para4,
 .para5 {
-    margin: 2% 4%;
+    margin: 3% 4%;
     font-size: 1.5rem;
     font-weight: 550;
 }
 
 .spe {
-    color: rgb(155, 20, 20);
-    font-weight: 700;
+    color: var(--dark-2);
+    font-weight: 800;
     font-style: oblique;
+}
+
+.spe:hover {
+    color: red;
+    font-style: normal;
 }
 
 ul {

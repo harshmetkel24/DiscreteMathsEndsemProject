@@ -7,8 +7,9 @@
         <link rel='stylesheet' href='../../css/demonstrate.css' />
     </head>
     <body>
-        <h1 class='heading1'>Problem Statement:</h1>
-        <button id="changeTheme" class="changeTheme">Change Theme</button>
+        <div class="container1">
+            <h1 class='heading1'>Problem Statement:</h1>
+        {{!-- <button id="changeTheme" class="changeTheme">Change Theme</button> --}}
         <p class='para1'>As we all know that each living being on this planet is
             in some way dependent on any other animal or plant. But how this
             balance of dependency is balanced? And how can one perform
@@ -23,7 +24,8 @@
             taking simple examples.
             <spen class='spe'>So waiting for what?</spen>
             Let's jump into it, by clicking on
-            <span class='spe'>start</span><button
+            <span class='spe'>start</span>
+            <br><button
                 id='start-button'
             >Start</button></p>
         <p class='para3' id='para3' style='visibility: hidden;'>If we see
@@ -65,8 +67,10 @@
             that row i, will eat animal representing columns j. And so based on
             this same principle we can construct a matrix as shown below, for
             the Food-Web like shown above.
+            <br>
             <button class='btn2' id='btn2'>Get the Adjency-matrix</button>
         </p>
+        </div>
         <h3
             class='heading3'
             id='heading3'
@@ -79,11 +83,13 @@
             <tbody id='body'></tbody>
         </table>
 
-        <p class='para4' id='para4' style='visibility: hidden;'>After looking at
+        <div class="container1">
+            <p class='para4' id='para4' style='visibility: hidden;'>After looking at
             whatever we seen, one can say that
             <span class='spe'>Adjency matrix gives the information about the
                 direct sources of food. Like which creature is directly
-                dependent on which other creature for food.</span><button
+                dependent on which other creature for food.</span>
+                <br><button
                 class='btn3'
                 id='btn3'
             >Get the Sqaure Adjency-matrix
@@ -104,6 +110,7 @@
             dimensions of matrix will increase the complexity won't increase to
             much extent because the basic principle remains the same.
         </p>
+        </div>
         <h3 class='heading4' id='heading4' style='visibility: hidden;'>Sqaure of
             Adjency-Matrix</h3>
 
@@ -113,7 +120,8 @@
             </th>
             <tbody id='body2'></tbody>
         </table>
-        <p class='para5' id='para5' style='visibility: hidden;'>
+        <div class="container1">
+            <p class='para5' id='para5' style='visibility: hidden;'>
             Here we have Square of Adjency matrix. This tells us
             <span class='spe'>about the indirect sources (means those sources of
                 food, which the creature does not directly consumes, but its
@@ -131,10 +139,8 @@
             looking at the Graph, we found that creature is Fruit-Fly. So this
             we one can do a detailed analysis on indirect food resources of any
             creature by looking at its Square of Adjency
-            <matrix class='button btn4' id='btn4' stdocument.getElementById('table2').style.visibility = 'visible';
-    document.getElementById('heading4').style.visibility = 'visible';
-    document.getElementById('para5').style.visibility = 'visible';>Get the Total dependecies
-                Matrix</matrix>
+            <br>
+            <button class="btn4" id="btn4">Get the Total Dependecies</button>
         </p>
 
         <p class='para6' id="para6" style='visibility: hidden;'>
@@ -144,6 +150,7 @@
                 dependecies including direct and indirect Food sources.
             </span>See below is depeiction of that matrix.
         </p>
+        </div>
         <h3 class="heading5" id="heading5" style="visibility: hidden;">Complete Food sources:</h3>
 
         <table id='table3' style='visibility: hidden;'>
