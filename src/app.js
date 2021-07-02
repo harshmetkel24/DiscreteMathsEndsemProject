@@ -21,15 +21,27 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.status(200).send('This is home page');
+    res.status(200).render('home');
 });
 
-app.get('/demonstrate', (req, res) => {
-    res.render('demonstrate');
+app.get('/about', (req, res) => {
+    res.status(200).render('about_us');
 });
 
 app.get('/commercialisation', (req, res) => {
-    res.render('commercialisation');
+    res.status(200).render('commercialisation');
+});
+
+app.get('/demonstrate', (req, res) => {
+    res.status(200).render('demonstrate');
+});
+
+app.get('/history', (req, res) => {
+    res.status(200).render('history');
+});
+
+app.get('/references', (req, res) => {
+    res.status(200).render('references');
 });
 
 app.listen(port, () => {

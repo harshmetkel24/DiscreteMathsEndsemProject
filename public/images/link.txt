@@ -1,0 +1,5 @@
+Euler: 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ftodayinsci.com%2FE%2FEuler_Leonhard%2FEulerLeonhard-Quotations.htm&psig=AOvVaw0bieln38tw1B7hVZXEPovc&ust=1624965506865000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCIjzvb2auvECFQAAAAAdAAAAABAF
+
+Adjacency matrix:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fadd-and-remove-edge-in-adjacency-matrix-representation-of-a-graph%2F&psig=AOvVaw1yLDkRvmpbGWuBYltNatkD&ust=1625210982091000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJjV1_KswfECFQAAAAAdAAAAABAD
