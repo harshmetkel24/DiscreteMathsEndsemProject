@@ -16,7 +16,8 @@ body {
     background-size: cover;
     background-color: var(--light-2);
     background-repeat: no-repeat;
-    font-family: cursive;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.09rem;
 }
 
@@ -24,16 +25,22 @@ body {
 .container1 {
     background-color: whitesmoke;
     padding: 2% 1%;
-    margin: 4% 4%;
+    margin: 4% 10%;
+}
+.bg-cont {
+    background-color: #e0ffff;
+    padding: 4% 5%;
+    margin: 2% 3%;
 }
 
 /* Table */
 table tr td {
     margin: 80px;
-    border: var(--dark-4) solid 2px;
-    padding: 4px 8px;
+    border: #3800ff solid 2px;
+    padding: 6px 8px;
     text-align: center;
     font-weight: 800;
+    font-size: 1.2rem;
 }
 table {
     border: var(--dark-1) solid 4px;
@@ -75,19 +82,20 @@ table {
 .img-graph {
     width: 50vw;
     height: 50vw;
-    margin: 5% 19vw;
+    margin: 5% 6vw;
     border: ridge 0.7rem var(--dark-2);
     box-shadow: skyblue -5px 12px 14px 16px;
 }
+
 .spe {
-    color: var(--dark-2);
+    color: red;
     font-weight: 800;
-    font-style: oblique;
 }
 
-.spe:hover {
-    color: var(--dark-4);
-    font-style: normal;
+.link {
+    color: blue;
+    font-weight: 800;
+    text-decoration: none;
 }
 
 #start-button,
