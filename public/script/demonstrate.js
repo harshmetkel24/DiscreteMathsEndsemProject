@@ -65,6 +65,7 @@ let Asum = new Array(14);
 for (let i = 0; i < A.length; i++) {
     Asum[i] = new Array(14);
     for (let j = 0; j < 14; j++) {
+        Asum[i][j] = 0;
         Asum[i][j] = A[i][j] + Asq[i][j];
     }
 }
@@ -125,11 +126,13 @@ for (let i = 0; i < A.length; i++) {
     row3 += `<tr> <td>${i + 1}</td><td>${Asum[i][0]}</td> <td>${
         Asum[i][1]
     }</td> <td>${Asum[i][2]}</td> <td>${Asum[i][3]}</td> <td>${Asum[i][4]}</td>
-        <td>${A[i][5]}</td> <td>${Asum[i][6]}</td> <td>${Asum[i][7]}</td> <td>${
-        Asum[i][8]
-    }</td> <td>${Asq[i][9]}</td> <td>${Asq[i][10]}</td> <td>${
-        Asum[i][11]
-    }</td> <td>${Asum[i][12]}</td> <td>${Asq[i][13]}</td> </tr>`;
+        <td>${Asum[i][5]}</td> <td>${Asum[i][6]}</td> <td>${
+        Asum[i][7]
+    }</td> <td>${Asum[i][8]}</td> <td>${Asum[i][9]}</td> <td>${
+        Asum[i][10]
+    }</td> <td>${Asum[i][11]}</td> <td>${Asum[i][12]}</td> <td>${
+        Asum[i][13]
+    }</td> </tr>`;
     document.getElementById('body3').innerHTML = row3;
 }
 
