@@ -30,4 +30,42 @@ iframe {
     border: 1vmax black ridge;
     box-shadow: white -5px -5px 15px 13px;
     border-radius: 2rem;
+    margin-bottom: auto;
+}
+
+.container {
+    margin: 3% auto;
+}
+
+.docs,
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 5px solid black;
+    margin: auto 25%;
+}
+
+.items button {
+    padding: 1% 2%;
+    border: black 0.3rem solid;
+    border-radius: 2rem;
+    background-color: cadetblue;
+    margin: 1% 13%;
+    width: 30vw;
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2%;
+    color: black;
+}
+
+.items button a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
