@@ -21,6 +21,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
+    res.status(200).render('contribution');
+});
+
+app.get('/home', (req, res) => {
     res.status(200).render('home');
 });
 

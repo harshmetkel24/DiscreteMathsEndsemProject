@@ -1,0 +1,31 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url('../images/bg_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: darkorange;
+    font-size: 5vmax;
+    text-decoration: brown underline;
+    font-weight: 800;
+    margin: 5%;
+}
+
+.cont {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
+    color: blue;
+}
+
+ul {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+}

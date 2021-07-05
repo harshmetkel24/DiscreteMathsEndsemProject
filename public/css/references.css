@@ -22,7 +22,7 @@ body {
     font-weight: 700;
     color: darkorange;
     text-align: center;
-    text-decoration: darkred underline;
+    text-decoration: brown underline;
 }
 
 iframe {
@@ -43,7 +43,9 @@ iframe {
     flex-direction: column;
     justify-content: space-evenly;
     border: 5px solid black;
-    margin: auto 25%;
+    border-radius: 2rem;
+    margin: 2% 25%;
+    box-shadow: white -5px -5px 15px 13px;
 }
 
 .items button {
@@ -61,6 +63,8 @@ iframe {
     font-weight: 700;
     margin-top: 2%;
     color: black;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .items button a {
